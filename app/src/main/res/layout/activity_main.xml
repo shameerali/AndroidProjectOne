@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnBottomNavigationView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bottom Navigation"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnListviewOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ListView One"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnBottomNavigationView"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/btnListviewTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ListView Two"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnListviewOne"
+        android:layout_marginTop="16dp"/>
+
+
+    <Button
+        android:id="@+id/btnRecyclerviewOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recycler view Two"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnListviewTwo"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/btnViewPagerOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View pager one"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRecyclerviewOne"
+        android:layout_marginTop="16dp"/>
+
+
+    <Button
+        android:id="@+id/btnViewPagerTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View pager two"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnViewPagerOne"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/btnViewPager2One"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View pager2 One"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnViewPagerTwo"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/btnViewPager2Two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View pager2 Two"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnViewPager2One"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/btnViewPager2Three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View pager2 Three"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnViewPager2Two"
+        android:layout_marginTop="16dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
