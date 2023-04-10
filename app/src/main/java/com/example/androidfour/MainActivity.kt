@@ -7,6 +7,7 @@ import android.widget.Button
 import androidx.fragment.app.FragmentActivity
 import androidx.navigation.findNavController
 import androidx.navigation.ui.setupWithNavController
+import com.example.androidfour.httpclient.OkhttpPageActivity
 import com.example.androidfour.listView.ListViewOneActivity
 import com.example.androidfour.listView.ListviewTwoActivity
 import com.example.androidfour.recycler_view.RecyclerViewOneActivity
@@ -34,6 +35,7 @@ class MainActivity : AppCompatActivity() {
         val btnViewPager2One = findViewById<Button>(R.id.btnViewPager2One)
         val btnViewPager2Two = findViewById<Button>(R.id.btnViewPager2Two)
         val btnViewPager2Three = findViewById<Button>(R.id.btnViewPager2Three)
+        val btnOkHttpClient = findViewById<Button>(R.id.btnOkHttpClient)
 
         btnBottomNavView.setOnClickListener{
 
@@ -79,6 +81,10 @@ class MainActivity : AppCompatActivity() {
 
         btnViewPager2Three .setOnClickListener{
             val intent = Intent(this, Viewpager2ThreeActivity::class.java)
+            startActivity(intent)
+        }
+        btnOkHttpClient .setOnClickListener{
+            val intent = Intent(this, OkhttpPageActivity::class.java)
             startActivity(intent)
         }
 
