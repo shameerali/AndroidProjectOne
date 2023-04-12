@@ -9,6 +9,14 @@ import okhttp3.*
 import java.io.IOException
 
 class OkhttpPageActivity : AppCompatActivity() {
+/*
+    // define a BOM and its version
+    implementation(platform("com.squareup.okhttp3:okhttp-bom:4.10.0"))
+
+    // define any required OkHttp artifacts without version
+    implementation("com.squareup.okhttp3:okhttp")
+    implementation("com.squareup.okhttp3:logging-interceptor")
+    */
 
     lateinit var client: OkHttpClient
     override fun onCreate(savedInstanceState: Bundle?) {

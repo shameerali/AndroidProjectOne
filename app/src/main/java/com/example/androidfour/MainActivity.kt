@@ -11,6 +11,7 @@ import com.example.androidfour.httpclient.OkhttpPageActivity
 import com.example.androidfour.listView.ListViewOneActivity
 import com.example.androidfour.listView.ListviewTwoActivity
 import com.example.androidfour.recycler_view.RecyclerViewOneActivity
+import com.example.androidfour.retrofit.RetrofitOneActivity
 import com.example.androidfour.view_pager.ViewPagerTwoActivity
 import com.example.androidfour.view_pager.ViewpagerOneActivity
 import com.example.androidfour.view_pager2.Viewpager2OneActivity
@@ -36,6 +37,7 @@ class MainActivity : AppCompatActivity() {
         val btnViewPager2Two = findViewById<Button>(R.id.btnViewPager2Two)
         val btnViewPager2Three = findViewById<Button>(R.id.btnViewPager2Three)
         val btnOkHttpClient = findViewById<Button>(R.id.btnOkHttpClient)
+        val btnRetrofitOne = findViewById<Button>(R.id.btnRetrofitOne)
 
         btnBottomNavView.setOnClickListener{
 
@@ -85,6 +87,10 @@ class MainActivity : AppCompatActivity() {
         }
         btnOkHttpClient .setOnClickListener{
             val intent = Intent(this, OkhttpPageActivity::class.java)
+            startActivity(intent)
+        }
+        btnRetrofitOne .setOnClickListener{
+            val intent = Intent(this, RetrofitOneActivity::class.java)
             startActivity(intent)
         }
 
