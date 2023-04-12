@@ -14,6 +14,9 @@
         android:theme="@style/Theme.AndroidFour"
         tools:targetApi="31">
         <activity
+            android:name=".retrofit.RetrofitTwoActivity"
+            android:exported="false" />
+        <activity
             android:name=".retrofit.RetrofitOneActivity"
             android:exported="false" />
         <activity
