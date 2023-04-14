@@ -18,6 +18,7 @@ import com.example.androidfour.view_pager.ViewpagerOneActivity
 import com.example.androidfour.view_pager2.Viewpager2OneActivity
 import com.example.androidfour.view_pager2.Viewpager2ThreeActivity
 import com.example.androidfour.view_pager2.Viewpager2TwoActivity
+import com.example.androidfour.viewmodel.MainViewModelOneActivity
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity() {
@@ -40,6 +41,7 @@ class MainActivity : AppCompatActivity() {
         val btnOkHttpClient = findViewById<Button>(R.id.btnOkHttpClient)
         val btnRetrofitOne = findViewById<Button>(R.id.btnRetrofitOne)
         val btnRetrofitTwo = findViewById<Button>(R.id.btnRetrofitTwo)
+        val btnViewModelOne = findViewById<Button>(R.id.btnViewModelOne)
 
         btnBottomNavView.setOnClickListener{
 
@@ -97,6 +99,10 @@ class MainActivity : AppCompatActivity() {
         }
         btnRetrofitTwo .setOnClickListener{
             val intent = Intent(this, RetrofitTwoActivity::class.java)
+            startActivity(intent)
+        }
+        btnViewModelOne .setOnClickListener{
+            val intent = Intent(this, MainViewModelOneActivity::class.java)
             startActivity(intent)
         }
 

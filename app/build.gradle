@@ -3,6 +3,7 @@ plugins {
     id 'org.jetbrains.kotlin.android'
     id 'androidx.navigation.safeargs'
 //    id 'androidx.navigation.safeargs'
+
 }
 
 android {
@@ -31,6 +32,10 @@ android {
     }
     kotlinOptions {
         jvmTarget = '1.8'
+    }
+
+    buildFeatures {
+        viewBinding = true
     }
 }
 
@@ -68,4 +73,9 @@ dependencies {
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.2'
 
     implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.4.0'
+
+    // remove find viewById
+//    apply plugin: 'kotlin-android'
+//    apply plugin: 'kotlin-android-extensions'
+
 }
