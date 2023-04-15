@@ -11,6 +11,7 @@ import com.example.androidfour.httpclient.OkhttpPageActivity
 import com.example.androidfour.listView.ListViewOneActivity
 import com.example.androidfour.listView.ListviewTwoActivity
 import com.example.androidfour.mvvm.code_first.FirstMvvmActivity
+import com.example.androidfour.mvvm.code_second.SecondMvvmActivity
 import com.example.androidfour.recycler_view.RecyclerViewOneActivity
 import com.example.androidfour.retrofit.RetrofitOneActivity
 import com.example.androidfour.retrofit.RetrofitTwoActivity
@@ -46,6 +47,7 @@ class MainActivity : AppCompatActivity() {
         val btnViewModelOne = findViewById<Button>(R.id.btnViewModelOne)
         val btnViewModelTwo = findViewById<Button>(R.id.btnViewModelTwo)
         val btnMvvmOne = findViewById<Button>(R.id.btnMvvmOne)
+        val btnMvvmTwo = findViewById<Button>(R.id.btnMvvmTwo)
 
         btnBottomNavView.setOnClickListener{
 
@@ -116,6 +118,10 @@ class MainActivity : AppCompatActivity() {
         }
         btnMvvmOne .setOnClickListener{
             val intent = Intent(this, FirstMvvmActivity::class.java)
+            startActivity(intent)
+        }
+        btnMvvmTwo .setOnClickListener{
+            val intent = Intent(this, SecondMvvmActivity::class.java)
             startActivity(intent)
         }
 

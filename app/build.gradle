@@ -78,4 +78,7 @@ dependencies {
 //    apply plugin: 'kotlin-android'
 //    apply plugin: 'kotlin-android-extensions'
 
+    // Fragment
+    implementation "androidx.fragment:fragment-ktx:1.2.5"
+
 }
