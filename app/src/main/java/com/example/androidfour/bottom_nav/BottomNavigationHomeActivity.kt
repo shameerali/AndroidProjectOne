@@ -1,9 +1,10 @@
-package com.example.androidfour
+package com.example.androidfour.bottom_nav
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.navigation.findNavController
 import androidx.navigation.ui.setupWithNavController
+import com.example.androidfour.R
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class BottomNavigationHomeActivity : AppCompatActivity() {

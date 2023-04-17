@@ -2,22 +2,20 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    app:startDestination="@id/favoritesFragment"
-    android:id="@+id/nav_graph">
-
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/favoritesFragment">
 
     <fragment
         android:id="@+id/albumsFragment"
-        android:name="com.example.androidfour.AlbumsFragment"
+        android:name="com.example.androidfour.bottom_nav.AlbumsFragment"
         android:label="Albums"
-        tools:layout="@layout/fragment_albums"
-        >
+        tools:layout="@layout/fragment_albums">
 
     </fragment>
 
     <fragment
         android:id="@+id/favoritesFragment"
-        android:name="com.example.androidfour.FavoritesFragment"
+        android:name="com.example.androidfour.bottom_nav.FavoritesFragment"
         android:label="fragment_favorite"
         tools:layout="@layout/fragment_favorites">
 
@@ -25,13 +23,10 @@
 
     <fragment
         android:id="@+id/accountFragment"
-        android:name="com.example.androidfour.AccountFragment"
+        android:name="com.example.androidfour.bottom_nav.AccountFragment"
         android:label="Account"
-        tools:layout="@layout/fragment_account"
-        >
+        tools:layout="@layout/fragment_account">
 
     </fragment>
-
-
 
 </navigation>

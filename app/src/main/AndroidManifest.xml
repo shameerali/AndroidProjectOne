@@ -56,7 +56,7 @@
             android:name=".listView.ListviewTwoActivity"
             android:exported="false" />
         <activity
-            android:name=".BottomNavigationHomeActivity"
+            android:name=".bottom_nav.BottomNavigationHomeActivity"
             android:exported="false" />
         <activity
             android:name=".listView.ListViewOneActivity"

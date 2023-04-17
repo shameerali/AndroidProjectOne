@@ -4,9 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
-import androidx.fragment.app.FragmentActivity
-import androidx.navigation.findNavController
-import androidx.navigation.ui.setupWithNavController
+import com.example.androidfour.bottom_nav.BottomNavigationHomeActivity
 import com.example.androidfour.httpclient.OkhttpPageActivity
 import com.example.androidfour.listView.ListViewOneActivity
 import com.example.androidfour.listView.ListviewTwoActivity
@@ -22,7 +20,6 @@ import com.example.androidfour.view_pager2.Viewpager2ThreeActivity
 import com.example.androidfour.view_pager2.Viewpager2TwoActivity
 import com.example.androidfour.viewmodel.MainViewModelOneActivity
 import com.example.androidfour.viewmodel.second.SecondVMActivity
-import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity() {
 
