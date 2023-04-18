@@ -13,7 +13,7 @@ class MainViewModelOneActivity : AppCompatActivity() {
     findViewById() in our MainActivity.kt file.
     apply plugin: ‘kotlin-android’
 
-    apply plugin: ‘kotlin-android-extensions’*/
+    apply plugin: ‘kotlin-android-extensions’*/  // Not working
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
