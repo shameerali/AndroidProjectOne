@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import com.example.androidfour.bottom_nav.BottomNavigationHomeActivity
+import com.example.androidfour.flow.first.presentation.FlowFirstActivity
 import com.example.androidfour.httpclient.OkhttpPageActivity
 import com.example.androidfour.listView.ListViewOneActivity
 import com.example.androidfour.listView.ListviewTwoActivity
@@ -47,6 +48,7 @@ class MainActivity : AppCompatActivity() {
         val btnMvvmOne = findViewById<Button>(R.id.btnMvvmOne)
         val btnMvvmTwo = findViewById<Button>(R.id.btnMvvmTwo)
         val btnLiveDataOne = findViewById<Button>(R.id.btnLiveDataOne)
+        val btnFlowOne = findViewById<Button>(R.id.btnFlowOne)
 
         btnBottomNavView.setOnClickListener{
 
@@ -125,6 +127,10 @@ class MainActivity : AppCompatActivity() {
         }
         btnLiveDataOne .setOnClickListener{
             val intent = Intent(this, LiveDataOneActivity::class.java)
+            startActivity(intent)
+        }
+        btnFlowOne .setOnClickListener{
+            val intent = Intent(this, FlowFirstActivity::class.java)
             startActivity(intent)
         }
 
