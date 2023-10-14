@@ -3,6 +3,8 @@ plugins {
     id 'org.jetbrains.kotlin.android'
     id 'androidx.navigation.safeargs'
 //    id 'androidx.navigation.safeargs'
+// Room Db kapt
+    id 'kotlin-kapt'
 
 }
 
@@ -93,5 +95,12 @@ dependencies {
 
 
     ////////  flow end <--
+
+    ////  Room db Start ----
+
+    implementation "androidx.room:room-runtime:2.4.2"
+    kapt "androidx.room:room-compiler:2.4.2"
+
+    //// Room Db End  ----
 
 }
