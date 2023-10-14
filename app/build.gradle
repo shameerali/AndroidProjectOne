@@ -74,11 +74,24 @@ dependencies {
 
     implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.4.0'
 
+
     // remove find viewById
 //    apply plugin: 'kotlin-android'
 //    apply plugin: 'kotlin-android-extensions'
 
     // Fragment
     implementation "androidx.fragment:fragment-ktx:1.2.5"
+
+    /////// flow start -->
+
+//    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1'
+
+
+//    implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.3.1' a
+
+
+    ////////  flow end <--
 
 }
