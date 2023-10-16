@@ -18,6 +18,7 @@ import com.example.androidfour.mvvm.code_second.SecondMvvmActivity
 import com.example.androidfour.recycler_view.RecyclerViewOneActivity
 import com.example.androidfour.retrofit.RetrofitOneActivity
 import com.example.androidfour.retrofit.RetrofitTwoActivity
+import com.example.androidfour.room_db.third_todolist.NoteHomeActivity
 import com.example.androidfour.view_pager.ViewPagerTwoActivity
 import com.example.androidfour.view_pager.ViewpagerOneActivity
 import com.example.androidfour.view_pager2.Viewpager2OneActivity
@@ -139,6 +140,10 @@ class MainActivity : AppCompatActivity() {
             }
 
             ////// After change button click
+
+            btnRoomDbThree.setOnClickListener {
+                replaceActivity(NoteHomeActivity())
+            }
 
         }
     }
