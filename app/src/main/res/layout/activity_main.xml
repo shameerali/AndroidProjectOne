@@ -222,7 +222,6 @@
                 android:text="Flow one"
                 />
 
-
             <Button
                 android:id="@+id/btnRoomDbThree"
                 android:layout_width="wrap_content"
@@ -231,6 +230,21 @@
                 android:text="Room Database three"
               />
 
+            <Button
+                android:id="@+id/btnDataStoreOne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Preference Data Store One"
+                />
+
+            <Button
+                android:id="@+id/btnDataStoreSecond"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Preference Data Store Second"
+                />
 
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>

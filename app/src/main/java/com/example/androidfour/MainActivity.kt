@@ -1,11 +1,9 @@
 package com.example.androidfour
 
 import android.app.Activity
-import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
 import com.example.androidfour.bottom_nav.BottomNavigationHomeActivity
 import com.example.androidfour.databinding.ActivityMainBinding
 import com.example.androidfour.flow.first.presentation.FlowFirstActivity
@@ -15,6 +13,8 @@ import com.example.androidfour.listView.ListviewTwoActivity
 import com.example.androidfour.livedata.LiveDataOneActivity
 import com.example.androidfour.mvvm.code_first.FirstMvvmActivity
 import com.example.androidfour.mvvm.code_second.SecondMvvmActivity
+import com.example.androidfour.data_store.preferences_data_store.first.DataStoreActivity
+import com.example.androidfour.data_store.preferences_data_store.second.data.local.DataStoreSecondActivity
 import com.example.androidfour.recycler_view.RecyclerViewOneActivity
 import com.example.androidfour.retrofit.RetrofitOneActivity
 import com.example.androidfour.retrofit.RetrofitTwoActivity
@@ -143,6 +143,14 @@ class MainActivity : AppCompatActivity() {
 
             btnRoomDbThree.setOnClickListener {
                 replaceActivity(NoteHomeActivity())
+            }
+
+            btnDataStoreOne.setOnClickListener {
+                replaceActivity(DataStoreActivity())
+            }
+
+            btnDataStoreSecond.setOnClickListener {
+                replaceActivity(DataStoreSecondActivity())
             }
 
         }
