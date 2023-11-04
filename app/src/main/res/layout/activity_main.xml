@@ -245,6 +245,13 @@
                 android:layout_marginTop="16dp"
                 android:text="Preference Data Store Second"
                 />
+            <Button
+                android:id="@+id/btnNavigationComponent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Navigation Component"
+                />
 
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>

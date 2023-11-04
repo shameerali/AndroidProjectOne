@@ -15,6 +15,7 @@ import com.example.androidfour.mvvm.code_first.FirstMvvmActivity
 import com.example.androidfour.mvvm.code_second.SecondMvvmActivity
 import com.example.androidfour.data_store.preferences_data_store.first.DataStoreActivity
 import com.example.androidfour.data_store.preferences_data_store.second.data.local.DataStoreSecondActivity
+import com.example.androidfour.navigation_component.One.NavigationCompActivity
 import com.example.androidfour.recycler_view.RecyclerViewOneActivity
 import com.example.androidfour.retrofit.RetrofitOneActivity
 import com.example.androidfour.retrofit.RetrofitTwoActivity
@@ -151,6 +152,10 @@ class MainActivity : AppCompatActivity() {
 
             btnDataStoreSecond.setOnClickListener {
                 replaceActivity(DataStoreSecondActivity())
+            }
+
+            btnNavigationComponent.setOnClickListener {
+                replaceActivity(NavigationCompActivity())
             }
 
         }
